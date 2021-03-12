@@ -1,1 +1,0 @@
-ADMISSION_BAC = []
