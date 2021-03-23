@@ -1,5 +1,7 @@
+# - *- coding: utf- 8 - *-
 import telebot
 from telebot import *
+from InternationalTelegramBot.config import token
 
 ADMISSION_BAC = [
     'В 2021 году объявлен приём по следующим направлениям подготовки уровня бакалавриат и специалитет'
@@ -195,7 +197,7 @@ CONTACTS = [
     'Whatsapp | Viber | Telegram: \n+7 952 250 3827 \nInstagram: narfu_international '
 ]
 
-TOKEN = '1460604666:AAE0oASwac6RJzbReQ69iqd-UAP7LcRnczg'
+TOKEN = token
 
 bot = telebot.TeleBot(TOKEN)
 
@@ -467,4 +469,4 @@ def query_handler(call):
 
 
 if __name__ == '__main__':
-    bot.polling()
+    bot.polling(none_stop=True)
